@@ -1,6 +1,6 @@
 .container{
     margin-top: 2rem;
-    color: white;
+    color: transparent;
 }
 
 .titulo-productos{
@@ -15,12 +15,14 @@
     border-collapse: collapse;
     margin-bottom: 20px;
     font-size: 20;
-    border: 1px solid #ddd;
+    border: 1px solid white;
+    background-color: transparent;
   }
   
   /* Estilos para el encabezado de la tabla */
   .table th {
     background-color: transparent;
+    color: white;
     text-align: center;
     padding: 12px;
   }
@@ -28,6 +30,8 @@
   /* Estilos para las celdas de datos */
   .table td, .table th {
     padding: 8px;
+    background-color: transparent;
+    color: white;
     text-align: center;
   }
   
