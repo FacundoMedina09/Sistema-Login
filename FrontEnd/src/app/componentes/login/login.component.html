@@ -1,0 +1,25 @@
+<div class="contenedor">
+
+    <div class="contenedor-login-titulo">
+        <img class="img-login" src="../../../assets/img/logoLogin.png" alt="Img Login">
+        <h1 class="titulo-login">Login</h1>
+    </div>
+
+    <div class="contenedor-login-form">
+        
+        <div class="caja-label-input-login">
+            <input [(ngModel)]="username" type="text" class="form-login caja-login" placeholder="Ingrese usuario">
+        </div>
+       
+        <div class="caja-label-input-login">
+            <input [(ngModel)]="password" type="password" class="form-login caja-login" placeholder="Ingrese contraseña">
+        </div>
+        
+    </div>
+    <div class="contenedor-button">
+        <button class="button-enviar" (click)="login()">Aceptar</button>
+    </div>
+    <p class="parrafo">¿No tienes una cuenta? <a routerLink="/registro">Registrate</a></p>
+    
+    
+</div>

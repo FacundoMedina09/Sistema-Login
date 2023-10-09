@@ -3,6 +3,7 @@ import routesProduct from '../routes/product.routes';//Importamos routes de prod
 import routesUser from '../routes/usuario.routes';//Importamos routes de usuarios o login
 import { Product } from './product.models';//Importamos Product
 import { User } from './user.models';
+import cors from 'cors';
 
 class BackEnd { //Se crea la clase backend para hacer uso del servidor
 
@@ -36,6 +37,7 @@ class BackEnd { //Se crea la clase backend para hacer uso del servidor
     Midlewares(){   //Metodo que nos parsea el undefined a los datos de nuestro objeto user.
                     //Sin este metodo nuestro usuario tiene el campo "undefined" y no "usuario" y "password"
         this.app.use(express.json() )
+        this.app.use(cors())
     }
 
     async dbConexion(){             //Metodo con el que damos de alta la base de datos
@@ -50,3 +52,4 @@ class BackEnd { //Se crea la clase backend para hacer uso del servidor
 }
 
 export default BackEnd;
+

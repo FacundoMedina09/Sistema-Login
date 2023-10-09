@@ -1,1 +1,107 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,body{
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor{
+    width: 25rem;
+    
+    border: 2px  solid white ;
+    border-radius: 2rem ;
+    padding-bottom:3rem ;
+   
+   
+}
+.contenedor-login-titulo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid white;
+}
+
+.img-login{   
+    width: 5rem;
+    height: 5rem;
+    border: 2px  solid white ;
+    border-radius: 100% ;
+    margin: 3rem 2rem 0 0;
+}
+
+.titulo-login{
+    color: white;
+    font-size: 2.5rem;
+    margin-top: 5rem;
+}
+
+.contenedor-login-form{
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.caja-label-input{
+
+    margin:2rem 3rem 1rem 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.caja-label-input-login{
+    margin:2rem 0 1rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.label-form{
+    color: white;
+    font-size: 1.5rem;
+
+}
+
+.label-form-registro{
+    font-size: 1.1rem;
+}
+
+.form-login{
+    height: 1.5rem;
+    width: 10rem;
+    color:white;
+    background-color: transparent;
+    border: 1px  solid white ;
+}
+.caja-login{
+    width: 15rem;
+    height: 2rem;
+}
+
+
+.contenedor-button{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.button-enviar{
+    align-content: center;
+    height: 1.5rem;
+    width: 15rem;
+    color:white;
+    background-color: transparent;
+    border: 1px  solid white ;
+}
+.button-enviar:hover{
+    cursor: pointer;
+    border-color: #FF2E63;
+}
+
+.parrafo, .parrafo a{
+    color: white;
+    text-align: center;
+    
+}
+
+.navbar html, .navbar body{
+    display: none;
+}

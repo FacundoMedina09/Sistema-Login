@@ -1,0 +1,33 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid white;
+    padding-bottom: 1rem;
+}
+.navbar div{
+    margin: 0rem 3rem 0 3rem;
+    
+}
+
+.navbar-tiulo{
+    font-size: 2rem;
+    margin-top: 2rem;
+    color:white;
+    text-decoration: none;
+}
+
+.navbar-button{
+    align-content: center;
+    height: 4rem;
+    width: 6rem;
+    color:white;
+    background-color: transparent;
+    border: 1px  solid white ;
+    border-radius: 10%;
+}
+    
+.navbar-button:hover{
+    cursor: pointer;
+    border-color: #FF2E63;
+}

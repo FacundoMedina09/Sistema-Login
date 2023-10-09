@@ -17,6 +17,7 @@ const product_routes_1 = __importDefault(require("../routes/product.routes")); /
 const usuario_routes_1 = __importDefault(require("../routes/usuario.routes")); //Importamos routes de usuarios o login
 const product_models_1 = require("./product.models"); //Importamos Product
 const user_models_1 = require("./user.models");
+const cors_1 = __importDefault(require("cors"));
 class BackEnd {
     constructor() {
         this.app = (0, express_1.default)(); //Inicializamos la variable
@@ -42,6 +43,7 @@ class BackEnd {
     Midlewares() {
         //Sin este metodo nuestro usuario tiene el campo "undefined" y no "usuario" y "password"
         this.app.use(express_1.default.json());
+        this.app.use((0, cors_1.default)());
     }
     dbConexion() {
         return __awaiter(this, void 0, void 0, function* () {

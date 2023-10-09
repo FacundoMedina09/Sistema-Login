@@ -1,0 +1,4 @@
+ng-particles{   /*Esto es para que las particulas esten de fondo*/
+    position: fixed;
+    z-index: -1;
+}

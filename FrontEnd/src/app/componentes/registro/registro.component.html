@@ -1,0 +1,31 @@
+<div class="contenedor">
+
+    <div class="contenedor-login-titulo">
+        <h1 class="titulo-login">Registrar usuario</h1>
+    </div>
+
+    <div class="contenedor-login-form">
+        
+        <div class="caja-label-input">
+            <label class="label-form label-form-registro">Usuario:</label>
+            <input [(ngModel)]="username" type="text" class="form-login" placeholder="Ingrese usuario">
+        </div>
+       
+        <div class="caja-label-input">
+            <label class="label-form label-form-registro">Contraseña: </label>
+            <input  [(ngModel)]="password" type="password" class="form-login" placeholder="Ingrese contraseña">
+        </div>
+
+        <div class="caja-label-input ">
+            <label class="label-form label-form-registro">Repetir contraseña: </label>
+            <input   [(ngModel)]="confirmarPassword" type="password" class="form-login" placeholder="Ingrese contraseña">
+        </div>
+        
+    </div>
+    <div class="contenedor-button">
+        <button (click)="agregarUsuario()" class="button-enviar">Aceptar</button>
+    </div>
+    
+    <p class="parrafo"><a routerLink="/login">Volver</a></p>
+    
+</div>
